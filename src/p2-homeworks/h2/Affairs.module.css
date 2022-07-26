@@ -1,3 +1,53 @@
-.someClass {
-
+.task {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  background-color: rgb(243, 244, 245);
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+.task_content {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+.task_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(255, 0, 0, 0.2);
+  cursor: pointer;
+}
+.task_priority {
+  width: 70px;
+  text-align: center;
+}
+.task_priorityRed {
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+.task_priorityYellow {
+  color: rgb(150, 150, 4);
+  border: 1px solid rgb(150, 150, 4);
+  border-radius: 5px;
+}
+.task_priorityGreen {
+  color: green;
+  border: 1px solid green;
+  border-radius: 5px;
+}
+.todoList {
+  height: 80vh;
+}
+.buttons_container {
+  display: flex;
+  gap: 10px;
+}
+.buttons_container button {
+  cursor: pointer;
 }
