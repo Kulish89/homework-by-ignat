@@ -1,7 +1,28 @@
-.someClass {
-
+.input_container {
+  margin: 30px 0;
+  position: relative;
 }
 
-.error {
-    border: 1px solid red;
+.someClass {
+  margin-right: 10px;
+}
+.error_message {
+  position: absolute;
+  top: -26px;
+  left: 0;
+  color: red;
+  background-color: rgb(241, 211, 211);
+  padding: 2px;
+  border-radius: 2px;
+}
+.error_input {
+  margin-right: 10px;
+  border: 2px solid red;
+  border-radius: 2px;
+}
+.button {
+  display: inline-block;
+  padding: 0 20px;
+  cursor: pointer;
+  margin-right: 10px;
 }
