@@ -1,0 +1,18 @@
+.superEditableSpan {
+  position: relative;
+  color: grey;
+}
+
+.superEditableSpan::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 90%;
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  background-image: url(./education-pen.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

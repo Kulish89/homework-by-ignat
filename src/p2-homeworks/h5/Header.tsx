@@ -9,13 +9,31 @@ function Header() {
       <nav className={s.header_menu}>
         <ul className={s.menu_list}>
           <li>
-            <NavLink to={PATH.PRE_JUNIOR}>Pre-Junior</NavLink>
+            <NavLink
+              to={PATH.PRE_JUNIOR}
+              className={s.menu_item}
+              activeClassName={s.active_link}
+            >
+              Pre-Junior
+            </NavLink>
           </li>
           <li>
-            <NavLink to={PATH.JUNIOR}>Junior</NavLink>
+            <NavLink
+              to={PATH.JUNIOR}
+              className={s.menu_item}
+              activeClassName={s.active_link}
+            >
+              Junior
+            </NavLink>
           </li>
           <li>
-            <NavLink to={PATH.JUNIOR_PLUS}>Junior+</NavLink>
+            <NavLink
+              to={PATH.JUNIOR_PLUS}
+              className={s.menu_item}
+              activeClassName={s.active_link}
+            >
+              Junior+
+            </NavLink>
           </li>
         </ul>
       </nav>

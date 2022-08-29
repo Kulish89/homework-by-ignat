@@ -17,18 +17,29 @@
   margin: 0 0;
   position: absolute;
   top: 0px;
-  left: -190px;
+  left: -195px;
   display: flex;
   list-style: none;
   gap: 10px;
-  cursor: pointer;
+
   transition: 0.5s;
+}
+.menu_item {
+  text-decoration: none;
+  cursor: pointer;
+}
+.menu_item:hover {
+  color: blue;
+}
+.active_link {
+  color: blue;
+  font-weight: bold;
 }
 .menu_list::after {
   display: block;
   content: "";
   height: 20px;
-  width: 40px;
+  width: 30px;
   background-color: blue;
 }
 .menu_list:hover {
