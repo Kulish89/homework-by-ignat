@@ -1,0 +1,22 @@
+.table {
+  width: 300px;
+  background-color: aquamarine;
+}
+.table_head {
+  text-align: left;
+}
+.table_row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2px;
+}
+td,
+th {
+  border: 1px solid black;
+}
+.buttons {
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
