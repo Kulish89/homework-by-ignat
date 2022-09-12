@@ -25,7 +25,7 @@ const SuperRadio: React.FC<SuperRadioPropsType> = ({
 }) => {
   const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
     onChangeOption && onChangeOption(e.currentTarget.value);
-    // onChange, onChangeOption
+    onChange && onChange(e);
   };
 
   const mappedOptions: any[] = options
