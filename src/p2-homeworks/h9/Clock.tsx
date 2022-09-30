@@ -5,12 +5,14 @@ function Clock() {
   const [timerId, setTimerId] = useState<number>(0);
   const [date, setDate] = useState<Date>(new Date());
   const [show, setShow] = useState<boolean>(false);
+  const [disabled, setDisabled] = useState<boolean>(false);
 
   const stop = () => {
+    setDisabled(false);
     clearTimeout(timerId);
   };
   const start = () => {
-    stop();
+    setDisabled(true);
     const id: number = window.setInterval(() => {
       setDate(new Date());
     }, 1000);
@@ -43,8 +45,12 @@ function Clock() {
 
       {show && <div>{stringDate}</div>}
 
-      <SuperButton onClick={start}>start</SuperButton>
-      <SuperButton onClick={stop}>stop</SuperButton>
+      <SuperButton onClick={start} disabled={disabled}>
+        start
+      </SuperButton>
+      <SuperButton onClick={stop} disabled={!disabled}>
+        stop
+      </SuperButton>
     </div>
   );
 }
